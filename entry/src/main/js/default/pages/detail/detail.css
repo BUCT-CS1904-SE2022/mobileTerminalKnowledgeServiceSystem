@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 1000px;
+}
+.praise{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+}
+.pinglun{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+/*    z-index: 15;*/
+}
+.title{
+/*    padding-top: 30px;*/
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    flex-direction: row;
+    width: 90%;
+    align-content: center;
+    margin: 10px;
+    justify-content: space-between;
+}
+

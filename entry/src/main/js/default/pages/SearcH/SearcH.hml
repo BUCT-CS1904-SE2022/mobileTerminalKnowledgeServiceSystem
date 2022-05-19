@@ -1,0 +1,16 @@
+<div class="containe">
+    <search hint="请输入搜索内容" searchbutton="搜索" @search="search" @submit="sub">
+    </search>
+    <div for="{{list1}}" style="display: flex;flex-direction: column;justify-content: flex-start;">
+        <div class="lis1" onclick="todetail({{$item.id}})" >
+            <image src="{{$item.image_url}}" style="width: 150px;height: 100px;"></image>
+            <div style="display: flex;flex-direction: column;justify-content: space-around;">
+                <text style="font-size: 20px;">{{$item.name}}</text>
+                <div style="display: flex; justify-content: space-around;">
+                    <text style="font-size: 20px;">{{$item.artist}}</text>
+                    <text style="font-size: 20px;">{{$item.discover_time}}</text>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

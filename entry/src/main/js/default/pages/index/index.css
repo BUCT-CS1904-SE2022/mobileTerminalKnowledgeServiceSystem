@@ -1,0 +1,62 @@
+@media screen and (device-type: phone){
+    .container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url('../../common/images/back.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .MainHead{
+        margin-top: 50px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #picture{
+        margin-top: 20px;
+        width: 80%;
+        height: 250px;
+    }
+    .login{
+        flex-direction: column;
+    }
+    .titleHead{                     /* 主标题类 */
+        margin-top: 10px;       /* 边距 */
+        margin-left:30px;
+    }
+    #titleText{                     /* 欢迎来到掌上博物馆 */
+        font-size: 40px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .subtitleHead {                 /* 副标题类 */
+        margin-top: 5px;       /* 边距 */
+        align-items: flex-end;
+        width:80%;
+        margin-left:10px;
+    }
+    #subtitleTest{                  /*--计科1904 */
+        font-size: 20px;
+        text-align: left;
+    }
+    .title{
+        width: 80%;
+        align-content: center;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    #ac{
+        height: 15px;
+    }
+    .btn{
+        width: 80%;
+        height: 40px;
+        align-content: center;
+        margin: 10px;
+        justify-content: center;
+    }
+    .blank{
+        height:60px;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="container">
+    <swiper class="swiper" id="swiper" index="0" indicator="true" loop="true" digital="false" cachedsize="-1"
+            scrolleffect="spring">
+        <div class = "swiperContent" >
+            <image src="../../common/images/1.jpg"></image>
+        </div>
+        <div class = "swiperContent">
+            <image src="../../common/images/2.jpg"></image>
+        </div>
+        <div class = "swiperContent">
+            <image src="../../common/images/3.jpg"></image>
+        </div>
+    </swiper>
+</div>

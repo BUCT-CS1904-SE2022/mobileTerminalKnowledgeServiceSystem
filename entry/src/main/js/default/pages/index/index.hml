@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="MainHead">
+        <div class="titleHead">
+            <text id="titleText">掌 | 上 | 博 | 物 | 馆</text>
+        </div>
+
+        <div class="subtitleHead">
+            <text id="subtitleTest">计科1904</text>
+        </div>
+    </div>
+    <image id ="picture" src="../../common/images/bg-tv.jpg"></image>
+    <div class="blank">
+        <text ></text>
+    </div>
+    <div class="title" >
+        <input type="text" onchange="Account" placeholder="账号: "></input>
+    </div>
+    <div id='ac'>
+        <text ></text>
+    </div>
+    <div class="title">
+        <input onchange="topassword" id="a" placeholder="密码: "></input>
+    </div>
+    <div id='ac'>
+        <text ></text>
+    </div>
+    <button class="btn" value="登录" onclick="homePage"></button>
+</div>
+

@@ -1,0 +1,84 @@
+<!-- xxx.hml -->
+<div class="container">
+    <tabs class = "tabs" index="0" vertical="false" onchange="change">
+        <tab-content class="tabcontent" scrollable="true">
+            <list>
+                <list-item>
+                    <image src="../../common/images/sea.png" style="width: 100%;margin-top:10px;margin-bottom:10px;" onclick="tosearch"></image>
+                </list-item>
+                <list-item>
+                    <text style="margin-left:15px;margin-bottom:10px;font-weight: 300;">热 门 推 荐</text>
+
+                </list-item>
+                <list-item>
+                    <div class="container3">
+                        <swiper class="swiper" id="swiper" index="0" indicator="true" loop="true" digital="false" cachedsize="-1"
+                                scrolleffect="spring">
+                            <div class = "swiperContent" >
+                                <image src="../../common/images/1.jpg"></image>
+                            </div>
+                            <div class = "swiperContent">
+                                <image src="../../common/images/2.jpg"></image>
+                            </div>
+                            <div class = "swiperContent">
+                                <image src="../../common/images/3.jpg"></image>
+                            </div>
+                        </swiper>
+                    </div>
+                </list-item>
+                <list-item>
+                    <text style="margin-left:15px;margin-bottom:10px;font-weight: 300;">新 闻</text>
+                </list-item>
+                <list-item for="{{list1}}" style="width: 100%;" onclick="todetail({{$item.id}})">
+                    <div>
+                        <div class="lis1" >
+                            <image src="{{$item.imageUrl}}" style="width: 150px;height: 100px;"></image>
+                            <div style="display: flex;flex-direction: column;justify-content: space-around;">
+                                <text style="font-size: 20px;">{{$item.name}}</text>
+                                <div style="display: flex; justify-content: space-around;">
+                                    <text style="font-size: 20px;">{{$item.artist}}</text>
+                                    <text style="font-size: 20px;">{{$item.discoverTime}}</text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </list-item>
+            </list>
+            <div style="display: flex;flex-direction: column;width: 100%;height: 5000px;">
+                <text style="margin-left:15px;margin-bottom:10px;font-weight: 300;">热 评 榜</text>
+                <div for="{{list2}}" onclick="todetail({{$item.id}})">
+                    <div class="lis1" >
+                        <image src="{{$item.image_url}}" style="width: 150px;height: 100px;"></image>
+                        <div style="display: flex;flex-direction: column;justify-content: space-around;">
+                            <text style="font-size: 20px;">{{$item.name}}</text>
+                            <div style="display: flex; justify-content: space-around;">
+                                <text style="font-size: 20px;">{{$item.artist}}</text>
+                                <text style="font-size: 20px;">{{$item.discover_time}}</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: column;width: 100%;height: 5000px;">
+                <text style="margin-left:15px;margin-bottom:10px;font-weight: 300;">个 人 中 心</text>
+                <div for="{{list3}}" onclick="todetail({{$item.id}})">
+                    <div class="lis1" >
+                        <image src="{{$item.imageUrl}}" style="width: 150px;height: 100px;"></image>
+                        <div style="display: flex;flex-direction: column;justify-content: space-around;">
+                            <text style="font-size: 20px;">{{$item.name}}</text>
+                            <div style="display: flex; justify-content: space-around;">
+                                <text style="font-size: 20px;">{{$item.artist}}</text>
+                                <text style="font-size: 20px;">{{$item.discoverTime}}</text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tab-content>
+        <tab-bar class="tab-bar" mode="fixed">
+            <text class="tab-text">首页</text>
+            <text class="tab-text">热评榜</text>
+            <text class="tab-text">个人主页</text>
+        </tab-bar>
+    </tabs>
+</div>
